@@ -1,0 +1,40 @@
+@import 'variables.scss';
+
+.allFaq{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    margin: 10px auto;
+}
+.faq{
+    background-color: $cyan;
+}
+.openButton{
+    display: none;
+    &:checked ~ .answer{
+        max-height: fit-content;
+        display: block;
+        opacity: 1;
+    }
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    font-size: 2em;
+    padding: 20px;
+    .openButtonIcon{
+        color: $white;
+        cursor: pointer;
+    }
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    font-size: 1.5em;
+    background-color: $white;
+}

@@ -1,0 +1,48 @@
+.cart {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.cart li {
+  list-style-type: none;
+}
+
+.product {
+  margin: 15px 0 15px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: rgb(251, 251, 251);
+}
+@media (max-width: 768px) {
+  .product {
+    flex-flow: column wrap;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.pic {
+  width: 25%;
+}
+.pic img {
+  width: 250px;
+  height: 250px;
+}
+
+.info {
+  width: 75%;
+  text-align: right;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+}
+
+.label {
+  display: inline-block;
+  width: 15%;
+  margin: -10px -10px;
+}/*# sourceMappingURL=cart.css.map */

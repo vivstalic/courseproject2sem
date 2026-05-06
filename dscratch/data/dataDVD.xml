@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE products[
+    <!ELEMENT products (product+)>
+    <!ELEMENT product (id, poster, genre, name, price)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT poster EMPTY>
+    <!ATTLIST poster
+    photo CDATA #IMPLIED>
+    <!NOTATION JPG SYSTEM "image/jpg">
+    <!ELEMENT genre (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+]>
+
+<products>
+<product>
+    <id>1</id>
+    <poster photo="pics/dvd1.jpg"/>
+    <genre>детский</genre>
+    <name>Каждый любит Дональда</name>
+    <price>30</price>
+</product>
+
+<product>
+    <id>2</id>
+    <poster photo="pics/dvd2.jpg"/>
+    <genre>детский</genre>
+    <name>Лунтик: возвращение домой</name>
+    <price>30</price>
+</product>
+
+<product>
+    <id>3</id>
+    <poster photo="pics/dvd3.jpg"/>
+    <genre>триллер</genre>
+    <name>Бойцовский клуб</name>
+    <price>30</price>
+</product>
+</products>

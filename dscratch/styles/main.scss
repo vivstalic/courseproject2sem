@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Exo 2';
+    src: url('fonts/Exo2.woff') format('.woff');
+    src: url('fonts/Exo2.svg') format('.svg');
+}
+@import 'variables.scss';
+*{
+    font-family: "Exo 2";
+    animation: $animation;
+    transition: $transition;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    &:visited{
+        color: #000;
+    }
+}
+header{
+    margin-top: -90px;
+    margin-bottom: -70px;
+}
+#burgerToggle, .burgerIcon { 
+    display: none; 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    .nav {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li { padding: 0 25px; }
+        &.left, &.right { flex: 1; }
+        &.left { justify-content: flex-start; }
+        &.right { justify-content: flex-end; }
+        .navItem.mobile { display: none; }
+    }
+}
+@media (max-width: 768px) {
+    header{
+        margin: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 80px;
+        position: relative;
+        padding: 10px 20px;
+        .burgerIcon {
+            display: block;
+            order: 1;
+            cursor: pointer;
+            font-size: 30px;
+            .close { display: none; }
+        }
+        .nav.center { 
+            display: flex; 
+            order: 2; 
+            flex: 0;
+            justify-content: center;
+            .navLogo svg{
+                width: 140px;
+                height: auto;
+                display: block;
+            }
+        }
+        .nav.right { 
+            display: flex; 
+            order: 3; 
+            flex: 1; 
+            justify-content: flex-end;
+            .navItem.desktop { display: none; }
+            .navCart svg{
+                width: 35px;
+                height: auto;
+                display: block;
+            }
+        }
+        .nav.left {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: -15px;
+            width: 100%;
+            background-color: $white;
+            padding: 20px;
+            z-index: 100;
+            li {
+                padding: 15px 0;
+                width: 100%;
+                border-bottom: 1px solid #e8ebec;
+            }
+            .navItem.mobile { display: block; }
+        }
+        #burgerToggle:checked ~ .nav.left {
+            display: flex;
+        }
+        #burgerToggle:checked ~ .burgerIcon {
+            .open { display: none; }
+            .close { display: block; }
+        }
+    }
+}
+h1{
+    text-align: center;
+}
+.pagetitle{
+    background-image: url(../pics/header.png);
+    height: fit-content;
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 25px;
+    p{
+    color: $white;
+    margin: 0 auto;
+    font-size: 25px;
+    text-align: center;
+    &:first-child{
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 1200px) {
+    margin: auto;
+    width: 100%;
+}
+}
+footer{
+    background-color: $black;
+    margin-top: 50px;
+    p{
+        color: $white;
+        margin: 0;
+        line-height: 1.5;
+    }
+    width: 100%;
+}
+body{
+    margin-bottom: 0;
+}
+.button{
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: $black;
+    a, p{
+        color: $white;
+        font-size: larger;
+        text-align: center;
+        margin: auto;
+    }
+    &:hover{
+        background-color: #404b4f;
+        cursor: pointer;
+    }
+    @media (max-width: 768px) {
+        width: fit-content;
+    }
+    
+}
+.nextpage{
+    width: 10%;
+    font-size: larger;
+    border-radius: 20px;
+    margin: 0px auto;
+    background-color: $cyan;
+        a{
+        color: $white;
+    }
+    &:hover{
+        background-color: #57bde3;
+    }
+    @media (max-width: 768px) {
+        width: fit-content;
+    }
+}
