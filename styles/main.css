@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Exo2";
-  src: url("../fonts/Exo2.woff") format(".woff");
-  src: url("../fonts/Exo2.svg") format(".svg");
-}
 @keyframes anime {
   from {
     opacity: 0;
@@ -10,6 +5,11 @@
   to {
     opacity: 1;
   }
+}
+@font-face {
+  font-family: "Exo2";
+  src: url("../fonts/Exo2.woff") format(".woff");
+  src: url("../fonts/Exo2.svg") format(".svg");
 }
 * {
   font: "Exo2";

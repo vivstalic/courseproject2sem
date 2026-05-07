@@ -1,9 +1,9 @@
+@import 'variables.scss';
 @font-face {
     font-family: 'Exo2';
     src: url('../fonts/Exo2.woff') format('.woff');
     src: url('../fonts/Exo2.svg') format('.svg');
 }
-@import 'variables.scss';
 *{
     font: "Exo2";
     animation: $animation;
