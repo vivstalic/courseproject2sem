@@ -8,8 +8,8 @@
 }
 @font-face {
   font-family: "Exo2";
-  src: url("./fonts/Exo2.woff") format(".woff");
-  src: url("./fonts/Exo2.svg") format(".svg");
+  src: url("courseproject2sem/fonts/Exo2.woff") format(".woff");
+  src: url("courseproject2sem/fonts/Exo2.svg") format(".svg");
 }
 * {
   font: "Exo2";
