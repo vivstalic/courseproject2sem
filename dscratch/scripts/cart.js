@@ -60,20 +60,28 @@ function renderCart(){
     totalField.innerText = `Итого: ${total} BYN`;
 }
 
-
-        function confirmOffer(item){
-            document.getElementById("confirmOffer").innerHTML=""
-            item.preventDefault();
-            let name = document.getElementById("name").value
-            let phone = document.getElementById("phone").value
-            let delivery = document.getElementById("deliveryType").value
-            name = document.createElement("p")
-            document.getElementById("confirmOffer").append(name)
-            phone = document.createElement("p")
-            document.getElementById("confirmOffer").append(phone)
-            delivery = document.createElement("p")
-            document.getElementById("confirmOffer").append(delivery)
+document.addEventListener('DOMContentLoaded', () =>{
+    const deliveryTypePost = document.getElementById('deliveryType-post');
+    const deliveryTypeCourier = document.getElementById('deliveryType-courier');
+    const addressType = document.getElementById('addressType');
+    const paymentTypeCash = document.getElementById('paymentType-cash');
+    const paymentTypeErip = document.getElementById('paymentType-erip');
+    function formUpdates(){
+        if(deliveryTypeCourier.checked){
+            addressType.innerText = "Домашний адрес: ";
+            paymentTypeCash.disabled = true;
+            if(paymentTypeCash.checked){
+                paymentTypeErip.checked = true;
+            }}
+            else {
+                addressType.innerText = "Адрес ближайшего отделения Европочты: ";
+                paymentTypeCash.disabled = false;
+            }
         }
-        document.getElementById("confirmOrder").addEventListener("click",confirmOffer)
+        deliveryTypePost.addEventListener('change', formUpdates);
+        deliveryTypeCourier.addEventListener('change', formUpdates);
+        formUpdates();
+    
+})
 
 window.addEventListener('DOMContentLoaded', renderCart);

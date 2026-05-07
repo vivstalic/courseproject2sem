@@ -30,11 +30,6 @@ a:visited {
   color: #000;
 }
 
-header {
-  margin-top: -90px;
-  margin-bottom: -70px;
-}
-
 #burgerToggle, .burgerIcon {
   display: none;
 }
@@ -63,6 +58,9 @@ nav .nav.left {
 }
 nav .nav.right {
   justify-content: flex-end;
+}
+nav .nav.center .navLogo object {
+  width: 100%;
 }
 nav .nav .navItem.mobile {
   display: none;
@@ -95,8 +93,8 @@ nav .nav .navItem.mobile {
     flex: 0;
     justify-content: center;
   }
-  nav .nav.center .navLogo svg {
-    width: 140px;
+  nav .nav.center .navLogo object {
+    width: 45vw;
     height: auto;
     display: block;
   }
@@ -109,10 +107,13 @@ nav .nav .navItem.mobile {
   nav .nav.right .navItem.desktop {
     display: none;
   }
-  nav .nav.right .navCart svg {
-    width: 35px;
+  nav .nav.right .navCart object {
+    width: 10vw;
     height: auto;
     display: block;
+  }
+  nav .nav.right .navCart svg {
+    width: 10vw;
   }
   nav .nav.left {
     display: none;

@@ -44,5 +44,7 @@ form {
 .label {
   display: inline-block;
   width: 15%;
-  margin: -10px -10px;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 15px;
 }/*# sourceMappingURL=cart.css.map */
