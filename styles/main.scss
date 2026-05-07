@@ -26,8 +26,7 @@ nav {
     a{
     font-size: x-large;
     font-weight: bold;
-    h1 {color: #000;}
-    &:visited{
+    &:visited, &:link, &:hover, &:active{
         color: #000;
     }
 }
