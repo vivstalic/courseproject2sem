@@ -1,11 +1,11 @@
 @import 'variables.scss';
 @font-face {
     font-family: 'Exo2';
-    src: url('courseproject2sem/fonts/Exo2.woff') format('.woff');
-    src: url('courseproject2sem/fonts/Exo2.svg') format('.svg');
+    src: url('../fonts/Exo2.woff') format('.woff');
+    src: url('../fonts/Exo2.svg') format('.svg');
 }
 *{
-    font: "Exo2";
+    font-family: "Exo2";
     animation: $animation;
     transition: $transition;
 }
