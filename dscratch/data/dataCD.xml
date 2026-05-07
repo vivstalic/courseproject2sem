@@ -60,4 +60,28 @@
     <album>BREACH</album>
     <price>100</price>
 </product>
+
+<product>
+    <id>7</id>
+    <artist photo="pics/cd7.jpg"/>
+    <name>Radiohead</name>
+    <album>OK Computer</album>
+    <price>250</price>
+</product>
+
+<product>
+    <id>8</id>
+    <artist photo="pics/cd8.jpg"/>
+    <name>Pink Floyd</name>
+    <album>The Wall</album>
+    <price>200</price>
+</product>
+
+<product>
+    <id>9</id>
+    <artist photo="pics/cd9.jpg"/>
+    <name>Adele</name>
+    <album>21</album>
+    <price>80</price>
+</product>
 </products>
