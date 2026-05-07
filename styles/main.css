@@ -38,6 +38,8 @@ nav {
 nav a {
   font-size: x-large;
   font-weight: bold;
+}
+nav a h1 {
   color: #000;
 }
 nav a:visited {
