@@ -10,7 +10,7 @@
   font-family: "Exo 2";
   src: url("../fonts/Exo2.woff") format(".woff");
   src: url("../fonts/Exo2.svg") format(".svg");
-  src: url("../fonts/Exo2.ttf") format(".ttf");
+  src: url("../fonts/Exo2.ttf") format("truetype");
 }
 * {
   font-family: "Exo 2";
