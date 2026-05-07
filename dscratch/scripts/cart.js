@@ -27,6 +27,7 @@ function renderCart(){
     const cartList = document.getElementById("cart");
     const totalField = document.getElementById("total");
     const productCounter = document.getElementById("cartProductCounter");
+    const cartForm = document.querySelector('.form');
     updateCartBadge();
     if (!cartList || !totalField) return;
     cartList.innerHTML = "";
@@ -34,8 +35,10 @@ function renderCart(){
     productCounter.innerHTML = `<h2>Позиций в корзине: ${cart.length}</h2>`;
     if(cart.length === 0){
         cartList.innerHTML = "<p>Корзина пуста!</p>";
+        cartForm.style.display = 'none';
     }
     else{
+        cartForm.style.display = 'block';
         cart.forEach((product, id) => {
         total += product.price;
         const li = document.createElement("li");
@@ -66,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () =>{
     const addressType = document.getElementById('addressType');
     const paymentTypeCash = document.getElementById('paymentType-cash');
     const paymentTypeErip = document.getElementById('paymentType-erip');
+    const orderForm = document.getElementById('orderForm');
+    const madeOrder = document.getElementById('madeOrder');
     function formUpdates(){
         if(deliveryTypeCourier.checked){
             addressType.innerText = "Домашний адрес: ";
@@ -81,7 +86,15 @@ document.addEventListener('DOMContentLoaded', () =>{
         deliveryTypePost.addEventListener('change', formUpdates);
         deliveryTypeCourier.addEventListener('change', formUpdates);
         formUpdates();
-    
+    orderForm.addEventListener('submit', function(event){
+        event.preventDefault();
+        orderForm.style.display = 'none';
+        madeOrder.style.display = 'block';
+        cart = [];
+        localStorage.setItem('theCart', JSON.stringify(cart));
+        renderCart();
+        updateCartBadge();
+    });
 })
 
 window.addEventListener('DOMContentLoaded', renderCart);

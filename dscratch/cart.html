@@ -34,18 +34,22 @@
             <p>Корзина</p>
             <p>Просмотр, изменение и оформление заказа</p>
          </div>
+         <div class="madeOrder" id="madeOrder" style="display: none;">
+            <h1>Спасибо за заказ!</h1>
+            <p>Мы свяжемся с вами в ближайшее время для уточнения деталей!</p>
+         </div>
          <h3 id="cartProductCounter">Позиций в корзине: 0</h2>
          <div class="cart">
             <ul id="cart"></ul>
             <h2 id="total">Итого: 0</h2>
-            <form class="form">
+            <form class="form" id="orderForm">
                <p>
                   <label class="label" for="name">ФИО: </label>
-                  <input type="text" id="name" placeholder="ФИО">
+                  <input type="text" id="name" placeholder="ФИО" required>
                </p>
                <p>
                   <label class="label" for="phone">Контактный телефон: </label>
-                  <input type="tel" id="phone" placeholder="Контактный телефон">
+                  <input type="tel" id="phone" placeholder="Контактный телефон" required>
                </p>
                <p>
                   <label class="label" for="deliveryType">Способ доставки: </label>
@@ -53,16 +57,15 @@
                </p>
                <p>
                   <label class="label" for="address" id="addressType">Адрес: </label>
-                  <input type="text" id="address" placeholder="Адрес">
+                  <input type="text" id="address" placeholder="Адрес" required>
                </p>
                <p>
                   <label class="label" for="paymentType">Способ оплаты: </label>
                   <input type="radio" id="paymentType-erip" checked name="payment"> ЕРИП <input type="radio" id="paymentType-cash" name="payment"> Наличные (только при доставке Европочтой)
                </p>
-               <p><button id="submit">Заказать</button></p>
+               <p><button type="submit" id="submit">Заказать</button></p>
             </form>
          </div>
-         <div id="confirmOrder"></div>
         </main>
         <footer>
             <div class="contact">
