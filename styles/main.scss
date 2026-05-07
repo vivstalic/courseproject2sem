@@ -26,7 +26,8 @@ nav {
     a{
     font-size: x-large;
     font-weight: bold;
-    &:visited, &:link{
+    color: #000;
+    &:visited{
         color: #000;
     }
 }

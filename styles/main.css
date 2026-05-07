@@ -38,8 +38,9 @@ nav {
 nav a {
   font-size: x-large;
   font-weight: bold;
+  color: #000;
 }
-nav a:visited, nav a:link {
+nav a:visited {
   color: #000;
 }
 nav .nav {
