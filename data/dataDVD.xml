@@ -13,75 +13,77 @@
 ]>
 
 <products>
-<product>
-    <id>1</id>
-    <poster photo="pics/dvd1.jpg"/>
-    <genre>детский</genre>
-    <name>Каждый любит Дональда</name>
-    <price>30</price>
-</product>
 
-<product>
-    <id>2</id>
-    <poster photo="pics/dvd2.jpg"/>
-    <genre>детский</genre>
-    <name>Лунтик: возвращение домой</name>
-    <price>30</price>
-</product>
+    <product>
+        <id>1</id>
+        <poster photo="pics/dvd1.jpg"/>
+        <genre>детский</genre>
+        <name>Каждый любит Дональда</name>
+        <price>30</price>
+    </product>
 
-<product>
-    <id>3</id>
-    <poster photo="pics/dvd3.jpg"/>
-    <genre>триллер</genre>
-    <name>Бойцовский клуб</name>
-    <price>30</price>
-</product>
+    <product>
+        <id>2</id>
+        <poster photo="pics/dvd2.jpg"/>
+        <genre>детский</genre>
+        <name>Лунтик: возвращение домой</name>
+        <price>30</price>
+    </product>
 
-<product>
-    <id>4</id>
-    <poster photo="pics/dvd4.jpg"/>
-    <genre>боевик</genre>
-    <name>Воздушная тюрьма</name>
-    <price>30</price>
-</product>
+    <product>
+        <id>3</id>
+        <poster photo="pics/dvd3.jpg"/>
+        <genre>триллер</genre>
+        <name>Бойцовский клуб</name>
+        <price>30</price>
+    </product>
 
-<product>
-    <id>5</id>
-    <poster photo="pics/dvd5.jpg"/>
-    <genre>фантастика</genre>
-    <name>Звёздные войны: Скайуокер. Восход</name>
-    <price>30</price>
-</product>
+    <product>
+        <id>4</id>
+        <poster photo="pics/dvd4.jpg"/>
+        <genre>боевик</genre>
+        <name>Воздушная тюрьма</name>
+        <price>30</price>
+    </product>
 
-<product>
-    <id>6</id>
-    <poster photo="pics/dvd6.jpg"/>
-    <genre>криминал</genre>
-    <name>Крёстный отец: трилогия (эксклюзив)</name>
-    <price>200</price>
-</product>
+    <product>
+        <id>5</id>
+        <poster photo="pics/dvd5.jpg"/>
+        <genre>фантастика</genre>
+        <name>Звёздные войны: Скайуокер. Восход</name>
+        <price>30</price>
+    </product>
 
-<product>
-    <id>7</id>
-    <poster photo="pics/dvd7.jpg"/>
-    <genre>комедия</genre>
-    <name>Скотт Пилигрим против всех</name>
-    <price>50</price>
-</product>
+    <product>
+        <id>6</id>
+        <poster photo="pics/dvd6.jpg"/>
+        <genre>криминал</genre>
+        <name>Крёстный отец: трилогия (эксклюзив)</name>
+        <price>200</price>
+    </product>
 
-<product>
-    <id>8</id>
-    <poster photo="pics/dvd8.jpg"/>
-    <genre>детский</genre>
-    <name>Смурфики в кино</name>
-    <price>25</price>
-</product>
+    <product>
+        <id>7</id>
+        <poster photo="pics/dvd7.jpg"/>
+        <genre>комедия</genre>
+        <name>Скотт Пилигрим против всех</name>
+        <price>50</price>
+    </product>
 
-<product>
-    <id>9</id>
-    <poster photo="pics/dvd9.jpg"/>
-    <genre>триллер</genre>
-    <name>Метро</name>
-    <price>30</price>
-</product>
+    <product>
+        <id>8</id>
+        <poster photo="pics/dvd8.jpg"/>
+        <genre>детский</genre>
+        <name>Смурфики в кино</name>
+        <price>25</price>
+    </product>
+
+    <product>
+        <id>9</id>
+        <poster photo="pics/dvd9.jpg"/>
+        <genre>триллер</genre>
+        <name>Метро</name>
+        <price>30</price>
+    </product>
+    
 </products>

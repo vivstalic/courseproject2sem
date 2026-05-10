@@ -44,18 +44,18 @@ function renderCart(){
         const li = document.createElement("li");
         li.innerHTML = `
         <div class="cart">
-    <div class="product">
-        <div class="pic">
-            <img src="${product.photo}">
+            <div class="product">
+                <div class="pic">
+                    <img src="${product.photo}">
+                </div>
+                <div class="info">
+                    <h2>${product.name}</h2>
+                    <p>${product.album}</p>
+                    <h2>${product.price} BYN</h2>
+                    <div class="button" onclick="deleteFromCart(${id})" style="float:right;"><p>Удалить</p></div>
+                </div>
+            </div>
         </div>
-        <div class="info">
-            <h2>${product.name}</h2>
-            <p>${product.album}</p>
-            <h2>${product.price} BYN</h2>
-        <div class="button" onclick="deleteFromCart(${id})" style="float:right;"><p>Удалить</p></div>
-        </div>
-    </div>
-</div>
             `;
             cartList.appendChild(li);
         });
@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const paymentTypeErip = document.getElementById('paymentType-erip');
     const orderForm = document.getElementById('orderForm');
     const madeOrder = document.getElementById('madeOrder');
+
     function formUpdates(){
         if(deliveryTypeCourier.checked){
             addressType.innerText = "Домашний адрес: ";
@@ -83,9 +84,11 @@ document.addEventListener('DOMContentLoaded', () =>{
                 paymentTypeCash.disabled = false;
             }
         }
+
         deliveryTypePost.addEventListener('change', formUpdates);
         deliveryTypeCourier.addEventListener('change', formUpdates);
         formUpdates();
+        
     orderForm.addEventListener('submit', function(event){
         event.preventDefault();
         orderForm.style.display = 'none';
