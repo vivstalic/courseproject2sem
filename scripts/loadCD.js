@@ -14,7 +14,7 @@ function loadCD() {
             const photo = product.getElementsByTagName("artist")[0].getAttribute("photo");
             const safeName = name.replace(/'/g, "\\'");
             const safeAlbum = album.replace(/'/g, "\\'");
- htmlContent += `
+            htmlContent += `
                 <div class="product">
                     <img src="${photo}" alt="${name}">
                     <h3>${name}</h3>
